@@ -6,13 +6,14 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
-    body { font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif; background-color:#d0e6c8; color:#000000; margin:40px auto; max-width:800px; line-height:1.8; padding:20px; }
-    h1,h2,h3 { color:#000000; }
-    h1 { border-bottom:2px solid #000000; padding-bottom:5px; }
-    a { color:#006400; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    nav { background-color:#a0cfa0; padding:10px; border-radius:8px; margin-bottom:20px; }
-    nav a { margin-right:15px; }
+    body { font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif; background-color:#d0e6c8; color:#000000; margin:40px auto; max-width:900px; line-height:1.9; padding:20px; }
+    h1 { border-bottom: 3px solid #006400; padding-bottom:8px; font-size:2em; }
+    h2 { color:#004d00; margin-top:30px; margin-bottom:15px; font-size:1.5em; }
+    nav { position:sticky; top:0; background-color:#a0cfa0; padding:10px; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    nav a { margin-right:15px; font-weight:bold; color:#003300; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    section { background-color:#eaf3e8; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:1px 2px 5px rgba(0,0,0,0.1); }
+    p, .math { margin-bottom:15px; }
   </style>
 </head>
 <body>
@@ -25,23 +26,30 @@
 
 <h1>微分の基本</h1>
 
-<p>二次関数の微分は次の通りです：</p>
-\[
-\displaystyle f(x) = x^2 \quad \Rightarrow \quad f'(x) = 2x
-\]
+<section>
+  <h2>二次関数の微分</h2>
+  <p>例として二次関数を微分します：</p>
+  \[
+  \displaystyle f(x) = x^2 \quad \Rightarrow \quad f'(x) = 2x
+  \]
+</section>
 
-<p>三角関数の微分も見やすく書きます：</p>
-\[
-\displaystyle f(x) = \sin(x) \quad \Rightarrow \quad f'(x) = \cos(x)
-\]
-\[
-\displaystyle f(x) = \cos(x) \quad \Rightarrow \quad f'(x) = -\sin(x)
-\]
+<section>
+  <h2>三角関数の微分</h2>
+  \[
+  \displaystyle f(x) = \sin x \quad \Rightarrow \quad f'(x) = \cos x
+  \]
+  \[
+  \displaystyle f(x) = \cos x \quad \Rightarrow \quad f'(x) = -\sin x
+  \]
+</section>
 
-<p>指数関数の微分：</p>
-\[
-\displaystyle f(x) = e^x \quad \Rightarrow \quad f'(x) = e^x
-\]
+<section>
+  <h2>指数関数の微分</h2>
+  \[
+  \displaystyle f(x) = e^x \quad \Rightarrow \quad f'(x) = e^x
+  \]
+</section>
 
 <!-- hitwebcounter Code START -->
 <a href="https://www.hitwebcounter.com" target="_blank">
