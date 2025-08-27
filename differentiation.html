@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>微分 - 数学まとめサイト</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <style>
-    body { font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif; background-color:#d0e6c8; color:#000000; margin:40px auto; max-width:900px; line-height:1.9; padding:20px; }
-    h1 { border-bottom: 3px solid #006400; padding-bottom:8px; font-size:2em; }
-    h2 { color:#004d00; margin-top:30px; margin-bottom:15px; font-size:1.5em; }
-    nav { position:sticky; top:0; background-color:#a0cfa0; padding:10px; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
-    nav a { margin-right:15px; font-weight:bold; color:#003300; text-decoration:none; }
-    nav a:hover { text-decoration:underline; }
-    section { background-color:#eaf3e8; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:1px 2px 5px rgba(0,0,0,0.1); }
-    p, .math { margin-bottom:15px; }
-  </style>
+<meta charset="UTF-8">
+<title>微分 - 数学まとめサイト</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+body{font-family:"Noto Sans JP",sans-serif;background:#d0e6c8;color:#000;margin:20px auto;max-width:900px;line-height:1.8;padding:15px;}
+h1{border-bottom:3px solid #006400;padding-bottom:8px;text-align:center;font-size:2em;}
+h2{color:#004d00;margin-top:30px;margin-bottom:15px;font-size:1.5em;}
+nav{position:sticky;top:0;background:#a0cfa0;padding:10px;border-radius:8px;margin-bottom:20px;box-shadow:0 2px 4px rgba(0,0,0,.1);}
+nav div{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+nav a{margin:5px 10px;font-weight:bold;color:#003300;text-decoration:none;}
+nav a:hover{text-decoration:underline;}
+section{background:#eaf3e8;padding:20px;border-radius:10px;margin-bottom:20px;box-shadow:1px 2px 5px rgba(0,0,0,.1);}
+@media screen and (max-width:600px){body{padding:10px;margin:10px auto;} nav div{flex-direction:column;align-items:center;} section{padding:15px;margin:15px 0;}}
+</style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html">トップ</a>
-  <a href="differentiation.html">微分</a>
-  <a href="integration.html">積分</a>
+<div>
+  <div>
+    <a href="index.html">トップ</a>
+    <a href="differentiation.html">微分</a>
+    <a href="integration.html">積分</a>
+  </div>
+  <div>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21435346&style=0010&nbdigits=8&type=page&initCount=0" title="Visitor Count Tool" alt="Count Tool" border="0"/>
+    </a>
+  </div>
+</div>
 </nav>
 
 <h1>微分の基本</h1>
 
-<section>
-  <h2>二次関数の微分</h2>
-  <p>例として二次関数を微分します：</p>
-  \[
-  \displaystyle f(x) = x^2 \quad \Rightarrow \quad f'(x) = 2x
-  \]
-</section>
-
-<section>
-  <h2>三角関数の微分</h2>
-  \[
-  \displaystyle f(x) = \sin x \quad \Rightarrow \quad f'(x) = \cos x
-  \]
-  \[
-  \displaystyle f(x) = \cos x \quad \Rightarrow \quad f'(x) = -\sin x
-  \]
-</section>
-
-<section>
-  <h2>指数関数の微分</h2>
-  \[
-  \displaystyle f(x) = e^x \quad \Rightarrow \quad f'(x) = e^x
-  \]
-</section>
-
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21435346&style=0010&nbdigits=8&type=page&initCount=0" title="Visitor Count Tool" Alt="Count Tool" border="0" />
-</a>
-<!-- hitwebcounter Code END -->
+<section><h2>二次関数の微分</h2><p>例： \(f(x)=x^2\) → \(f'(x)=2x\)</p></section>
+<section><h2>三角関数の微分</h2><p>\(f(x)=\sin x\) → \(f'(x)=\cos x\)<br>\(f(x)=\cos x\) → \(f'(x)=-\sin x\)</p></section>
+<section><h2>指数関数の微分</h2><p>\(f(x)=e^x\) → \(f'(x)=e^x\)</p></section>
 
 </body>
 </html>
