@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 京都大学 場合の数と確率</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+body{font-family:"Noto Sans JP",sans-serif;margin:20px auto;max-width:900px;line-height:1.8;padding:15px;background:#f4f8f4;}
+h1{border-bottom:3px solid #004d00;padding-bottom:8px;}
+section{background:#ffffff;padding:20px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 5px rgba(0,0,0,.1);}
+a.button{display:inline-block;padding:10px 20px;background:#006400;color:#fff;text-decoration:none;border-radius:6px;margin-top:10px;}
+a.button:hover{background:#004d00;}
+@media(max-width:600px){body{padding:10px;}}
+</style>
+</head>
+<body>
+
+<h1>2025 京都大学　場合の数と確率</h1>
+
+<section>
+<h2>問題の概要</h2>
+<p>
+（※ここにあなたの要約を書く）
+</p>
+</section>
+
+<section>
+<h2>解説</h2>
+<p>
+・2025京都大
+6の倍数であるためには、2の倍数かつ3の倍数であることが必要十分。
+まず2の倍数の方に着目すると、一の位は2であることが確定する。次に3の倍数であるための条件は各位の数の和が3の倍数であることだが、一の位は既に2であると確定しているので、残りの位の数の合計（Sとする）を3で割った余りが１なる条件を考えればよいと分かる。
+ここで、硬貨を投げることを繰り返していくとき、
+「Sを3で割った余りが０である」「Sを3で割った余りが 1である」
+「Sを3で割った余りが2である」
+という３つの状態が互いに遷移し合う。このように、操作を繰り返す問題でいくつかの状態が互いに遷移する状況下では、「遷移図（推移図）を描き、それをもとに漸化式を立てる」という方針が有効である。なお、その際のポイントとして「場合分けに漏れ・重複がないようにする」「対称性に注意してなるべく文字が少なく済むようにする」といったことが挙げられる。
+この問題でいうと、３つの状態があるからといってそれぞれの確率をp_n、q_n、r_nとおいてしまうと立てる等式が増え、連立漸化式を解かないといけないので少々大変だと思われる。そこで、今回は1を並べる確率と2を並べる確率が等しく、かつ３つの状態が他の状態へ推移する確率がいずれも1/2であるという対称性に注意すれば、Sを3で割った余りが 1である確率と2である確率は同一であることが計算する前から分かっている。よってどれか一つの状態の確率を文字で置けば、他の状態の確率はその文字で表され、文字はp_nだけで済むことになる。
+あとはp_nに関する漸化式を立てて、それを解けばよい。
+※解答ではSを3で割った余りが0である確率をp_nとしたが、考えたいのは余りが 1の確率だから、こちらをp_nとすればよかった。
+</p>
+</section>
+
+<section>
+  <h2>手書き解説</h2>
+<a href="pdf/2025_kyoto_prob.pdf" target="_blank" class="button">手書き解説PDF</a>
+
+<a href="index.html">← 一覧に戻る</a>
+</p>
+</body>
+</html>

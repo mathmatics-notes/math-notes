@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>積分 - 数学まとめサイト</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+body{font-family:"Noto Sans JP",sans-serif;background:#d0e6c8;color:#000;margin:20px auto;max-width:900px;line-height:1.8;padding:15px;}
+h1{border-bottom:3px solid #006400;padding-bottom:8px;text-align:center;font-size:2em;}
+h2{color:#004d00;margin-top:30px;margin-bottom:15px;font-size:1.5em;}
+nav{position:sticky;top:0;background:#a0cfa0;padding:10px;border-radius:8px;margin-bottom:20px;box-shadow:0 2px 4px rgba(0,0,0,.1);}
+nav div{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+nav a{margin:5px 10px;font-weight:bold;color:#003300;text-decoration:none;}
+nav a:hover{text-decoration:underline;}
+section{background:#eaf3e8;padding:20px;border-radius:10px;margin-bottom:20px;box-shadow:1px 2px 5px rgba(0,0,0,.1);}
+@media screen and (max-width:600px){body{padding:10px;margin:10px auto;} nav div{flex-direction:column;align-items:center;} section{padding:15px;margin:15px 0;}}
+</style>
+</head>
+<body>
+
+<nav>
+<div>
+  <div>
+    <a href="index.html">トップ</a>
+    <a href="differentiation.html">微分</a>
+    <a href="integration.html">積分</a>
+  </div>
+  <div>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21435346&style=0010&nbdigits=8&type=page&initCount=0" title="Visitor Count Tool" alt="Count Tool" border="0"/>
+    </a>
+  </div>
+</div>
+</nav>
+
+<h1>積分の基本</h1>
+
+<section>
+<h2>定積分の例</h2>
+<p>関数の面積を求める基本例です：</p>
+<p>\(\int_0^1 x^2 dx = \frac{1}{3}\)</p>
+</section>
+
+<section>
+<h2>不定積分の例</h2>
+<p>関数の原始関数を求めます：</p>
+<p>\(\int x^2 dx = \frac{x^3}{3} + C\)</p>
+</section>
+
+<section>
+<h2>三角関数の積分</h2>
+<p>三角関数の基本積分公式：</p>
+<p>\(\int \sin x dx = -\cos x + C\)<br>\(\int \cos x dx = \sin x + C\)</p>
+</section>
+
+<section>
+<h2>シグマ（総和）と積分の関係</h2>
+<p>有限和 \(\sum_{k=1}^{n} k^2\) を積分で近似することもできます：</p>
+<p>\(\sum_{k=1}^{n} k^2 \approx \int_0^n x^2 dx = \frac{n^3}{3}\)</p>
+</section>
+
+</body>
+</html>
